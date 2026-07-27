@@ -14,6 +14,11 @@ mongoose.connect('mongodb+srv://jatinrr2213_db_user:pr0gp3SL8n2U4ir4@cluster0.gz
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.error(err));
 
+  // Root test route
+app.get('/', (req, res) => {
+  res.send('Backend API is running live!');
+});
+
 // --- API ROUTES ---
 
 // 1. Get all notes (READ)
