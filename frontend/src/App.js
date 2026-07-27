@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'https://mern-notes-app-1-seeo.onrender.com';
+const API_URL = 'https://mern-notes-app-1-seeo.onrender.com/api/notes';
 
 function App() {
   const [notes, setNotes] = useState([]);
